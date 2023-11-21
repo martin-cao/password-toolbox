@@ -3,7 +3,7 @@ import string
 import pyperclip
 import linecache
 
-
+# Generate by random ASCII characters
 def generate_password(length=32, include_numbers=True, include_special_chars=True):
     chars = string.ascii_letters
     if include_numbers:
@@ -12,7 +12,7 @@ def generate_password(length=32, include_numbers=True, include_special_chars=Tru
         chars += string.punctuation
     return ''.join(random.choice(chars) for _ in range(length))
 
-
+# Generate by random words
 def generate_password_2(num=6):
     output = ""
     for _ in range(num):

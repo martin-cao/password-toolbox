@@ -39,7 +39,7 @@ def generate():
     # mode = "c"
 
     match mode:
-        case "c":
+        case "w":
             num = input("How many words do you want your password to have? (default: 6): ")
             # num = 6
 
